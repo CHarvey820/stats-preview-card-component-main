@@ -36,12 +36,12 @@ h2 {
   color: var(--clr-white);
 }
 
-h1{
-    font-size: 2.2em;
+h1 {
+  font-size: 2.2em;
 }
 
-h2{
-    margin: .2em;
+h2 {
+  margin: 0.2em;
 }
 
 .container {
@@ -52,7 +52,7 @@ h2{
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-radius: .5em;
+  border-radius: 0.5em;
 }
 
 .information {
@@ -74,12 +74,12 @@ h2{
   color: var(--clr-whiteAccent2);
   font-family: var(--font-lexend-deca);
   font-weight: var(--wt-400);
-  font-size: .9em;
-  letter-spacing: .09em;
+  font-size: 0.9em;
+  letter-spacing: 0.09em;
 }
 
-.stats-col{
-    padding: 1em;
+.stats-col {
+  padding: 1em;
 }
 
 .highlight {
@@ -88,21 +88,21 @@ h2{
 
 .img-mobile {
   width: 100%;
-  border-radius: .5em .5em 0 0;
+  border-radius: 0.5em 0.5em 0 0;
 }
 
 .img-desktop {
   display: none;
 }
 
-.violet-mobile{
-    width: 375px;
-    height: 275.233px;
-    border-radius: .5em .5em 0 0;
-    background-color: hsl(277, 91%, 30%);
-    position: absolute;
-    overflow: hidden;
-    opacity: .6;
+.violet-mobile {
+  width: 375px;
+  height: 275.233px;
+  border-radius: 0.5em 0.5em 0 0;
+  background-color: hsl(277, 91%, 30%);
+  position: absolute;
+  overflow: hidden;
+  opacity: 0.6;
 }
 
 /* pre-included attribution css moved from index <style> */
@@ -116,16 +116,71 @@ h2{
 }
 
 /* non-mobile settings */
-@media (min-width: 801px) {
-  .img-mobile {
-    display: none;
+@media (min-width: 905px) {
+  h1 {
+    margin: 0;
   }
 
-  .violet-mobile{
+  .container {
+    flex-direction: row;
+    max-width: 1000px;
+    height: 400px;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    text-align: left;
+    padding: 2em 4em;
+  }
+
+  .description {
+    font-size: 1em;
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding-right: 2em;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+    text-align: left;
+    margin-top: 1em;
+  }
+
+  .stats-col {
+    text-align: left;
+    padding: 0;
+  }
+
+  .img-container-desktop {
+    display: block;
+    height: 100%;
+  }
+
+  .violet-desktop {
+    position: absolute;
+    overflow: hidden;
+    width: 484.3px;
+    height: 400px;
+    border-radius: 0 0.5em 0.5em 0;
+    background-color: hsl(277, 91%, 30%);
+    opacity: 0.6;
+  }
+
+  .img-container-mobile {
     display: none;
   }
 
   .img-desktop {
     display: block;
+    height: 100%;
+    border-radius: 0 0.5em 0.5em 0;
   }
 }
